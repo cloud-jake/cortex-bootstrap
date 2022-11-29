@@ -3,9 +3,9 @@
 # https://github.com/GoogleCloudPlatform/cortex-data-foundation#deploy-the-data-foundation
 
 # Clone the repo
-#git clone --recurse-submodules https://github.com/GoogleCloudPlatform/cortex-data-foundation
+git clone --recurse-submodules https://github.com/GoogleCloudPlatform/cortex-data-foundation
 
-#cd cortex-data-foundation
+cd cortex-data-foundation
 
 
 #########################
