@@ -4,11 +4,11 @@
 
 ## Projects to Create
 # Project where the source dataset is and the build will run.
-PJID_SRC=partarch-cortex-src-5
+PJID_SRC=partarch-cortex-src-6
 
 # Target project for user-facing datasets (reporting and ML datasets)
 # If same projects, set to $PJID_SRC
-PJID_TGT=partarch-cortex-tgt-5
+PJID_TGT=partarch-cortex-tgt-6
 
 
 ## Billing Acount to link to Project
