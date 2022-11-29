@@ -2,7 +2,7 @@
 
 #https://github.com/GoogleCloudPlatform/cortex-data-foundation#check-setup
 
-#PROJECT_ID=$PJID_SRC
+#PJID_SRC=$PJID_SRC
 
 source variables.inc
 
@@ -16,4 +16,4 @@ cd mando-checker
 gcloud builds submit \
    --project $PJID_SRC  \
    --impersonate-service-account ${SERVICE_ACCOUNT}@${PJID_SRC}.iam.gserviceaccount.com \
-   --substitutions _DEPLOY_PROJECT_ID=${PROJECT_ID},_DEPLOY_BUCKET_NAME=${PROJECT_ID}-dag,_LOG_BUCKET_NAME=${PROJECT_ID}-log .   
+   --substitutions _DEPLOY_PJID_SRC=${PJID_SRC},_DEPLOY_BUCKET_NAME=${PJID_SRC}-dag,_LOG_BUCKET_NAME=${PJID_SRC}-log .   
