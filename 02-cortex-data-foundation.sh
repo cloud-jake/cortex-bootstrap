@@ -11,7 +11,7 @@ cd cortex-data-foundation
 #########################
 # Get Vriables
 
-source variables.inc
+source ../variables.inc
 
 projNum=`gcloud projects describe $PJID_SRC --format="value(projectNumber)"`
 SA_FULL=${SERVICE_ACCOUNT}@${PJID_SRC}.iam.gserviceaccount.com
