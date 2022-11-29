@@ -14,6 +14,6 @@ cd mando-checker
 
 #run the checker
 gcloud builds submit \
-   --project $PROJECT_ID  \
+   --project $PJID_SRC  \
    --impersonate-service-account ${SERVICE_ACCOUNT}@${PJID_SRC}.iam.gserviceaccount.com \
    --substitutions _DEPLOY_PROJECT_ID=${PROJECT_ID},_DEPLOY_BUCKET_NAME=${PROJECT_ID}-dag,_LOG_BUCKET_NAME=${PROJECT_ID}-log .   
