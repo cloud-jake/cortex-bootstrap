@@ -51,4 +51,4 @@ DEPLOY_CDC=true
 ###########################################################################################
 
 
-gcloud builds submit --project $PJID_SRC --impersonate-service-account $SA_FULL --substitutions _PJID_SRC=$PJID_SRC,_PJID_TGT=$PJID_TGT,_DS_CDC=$DS_CDC,_DS_RAW=$DS_RAW,_DS_REPORTING=$DS_REPORTING,_DS_MODELS=$DS_MODELS,_GCS_BUCKET=$GCS_BUCKET,_TGT_BUCKET=$TGT_BUCKET,_TEST_DATA=$TEST_DATA,_DEPLOY_CDC=$DEPLOY_CDC
+gcloud builds submit --project $PJID_SRC --impersonate-service-account $SA_FULL --async --substitutions _PJID_SRC=$PJID_SRC,_PJID_TGT=$PJID_TGT,_DS_CDC=$DS_CDC,_DS_RAW=$DS_RAW,_DS_REPORTING=$DS_REPORTING,_DS_MODELS=$DS_MODELS,_GCS_BUCKET=$GCS_BUCKET,_TGT_BUCKET=$TGT_BUCKET,_TEST_DATA=$TEST_DATA,_DEPLOY_CDC=$DEPLOY_CDC
